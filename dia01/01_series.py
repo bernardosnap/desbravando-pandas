@@ -13,10 +13,10 @@ s_idade
 # %%
 
 # Métodos das Séries
-media = s_idade.mean()
-variancia = s_idade.var()
-des_pad = s_idade.std()
-describe = s_idade.describe()
+media = s_idade.mean() #média
+variancia = s_idade.var() #variância
+des_pad = s_idade.std() #desvio padrão
+describe = s_idade.describe() #estatistica descritiva
 describe
 
 # %%
@@ -26,12 +26,13 @@ for i in idade:
     if i >= 30:
         nova_idade.append(i)
 
-nova_idade
+nova_idade #fazer for não é performático
 
 # %%
 
-filtro = s_idade >= 30
-s_idade[~filtro]
+filtro = s_idade >= 30 #o filtro são os elementos maiores ou iguais a 30
+s_idade[filtro] #mostra na série os elementos maiores ou iguais a 30
+# s_idade[~filtro] #mostra na série os elementos menores que 30
 
 # %%
 
